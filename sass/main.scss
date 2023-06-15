@@ -1,5 +1,7 @@
-@use './utils/vars' as *;
-@use './components/navigations' as *;
+@use './utils/variables' as *;
+@use './utils/base' as *;
+@use './components/page-header' as *;
+@use './components/page-nav' as *;
 
 /*można używać również @import*/
 
