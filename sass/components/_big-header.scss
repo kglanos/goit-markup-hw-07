@@ -4,7 +4,7 @@
     justify-content: center;
     background-image: linear-gradient(var(--shadow-img),
     var(--shadow-img)),
-    url("../../images/mainphoto.jpg");
+    url("../images/mainphoto.jpg");
     max-width: 1600px;
     margin: 0 auto;
 
@@ -37,6 +37,14 @@
             width: 200px;
             margin: 0 auto 106px auto;
             justify-content: center;
+
+            &:focus,
+            &:hover {
+                box-shadow: 0px 4px 4px var(--shadow-main-button);
+                transition-duration: var(--default-time);
+                transition-timing-function: var(--default-time-function);
+                cursor: pointer;
+            }
         }
 }
 
