@@ -299,15 +299,15 @@
             <a href="/webstudio.html" class="footer__logo"
               ><span class="footer__logo footer__logo--accent">Web</span>Studio</a
             >
-            <div class="link-footer footer__adress">
-              <address class="bottom-contact-adress footer__adress footer__adress--details">
+            <div class="footer__adress">
+              <address class="footer__adress footer__adress--details">
                 m. Warszawa, Aleje Jerozolimskie 21
               </address>
-              <address class="address-footer footer__adress footer__adress--contact">
-                <a class="mail-footer footer__adress footer__adress--mail" href="mailto:info@devstudio.com"
+              <address class="footer__adress footer__adress--contact">
+                <a class="footer__adress footer__adress--mail" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
-                <a class="mail-footer footer__adress footer__adress--tel" href="tel:+48111111111">+48 111 111 111</a>
+                <a class="footer__adress footer__adress--tel" href="tel:+48111111111">+48 111 111 111</a>
               </address>
             </div>
           </div>
@@ -348,16 +348,16 @@
             <form>
               <label for="newsletter" class="newsletter-footer-sendemail"
                 ><h5 class="newsletter-footer__joinus">Zapisz się do newslettera</h5>
-                <div class="input-send newsletter-footer__window">
+                <div class="newsletter-footer__window">
                 <input
                   type="email"
                   name="Email"
                   placeholder="E-mail"
-                  class="input-newsletter newsletter-footer__input"
+                  class="newsletter-footer__input"
               /></label>
-                <button class="button-footer newsletter-footer__button" type="submit">
+                <button class="newsletter-footer__button" type="submit">
                   Zapisz się
-                  <svg class="icon-footer newsletter-footer_button newsletter-footer_button--icon" width="24" height="24">
+                  <svg class="newsletter-footer__button--icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-iconsend"></use>
                   </svg>
                 </button>
@@ -372,7 +372,7 @@
       <div class="modal">
         <button type="button" class="modal__close" data-modal-close>X</button>
         <form name="order-service" autocomplete="on" class="modal__title">
-          <h3 class="modal__title modal__title--heading">Zostaw swoje dane w formularzu poniżej</h3>
+          <h3 class="modal__heading">Zostaw swoje dane w formularzu poniżej</h3>
           <div>
             <div>
               <label for="name" class="modal__box">Imie</label>
@@ -383,14 +383,14 @@
             </div>
             <div>
               <label for="phone" class="modal__box">Telefon</label>
-              <input class="modal__name" id="phone" type="tel" name="phone_number" required/>
+              <input class="modal__phone" id="phone" type="tel" name="phone_number" required/>
               <svg width="12" height="12" class="modal__icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
             <div>
               <label for="email" class="modal__box">Email</label>
-              <input class="modal__name" id="email" type="email" name="email" required/>
+              <input class="modal__email" id="email" type="email" name="email" required/>
               <svg width="12" height="12" class="modal__icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg></div>
@@ -398,17 +398,17 @@
                 <label for="comment" class="modal__box">Komentarz</label>
                 <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="modal__textarea"></textarea>
               </div>
-              <label class="label-checkbox" for="checkbox-accept">
-                <input class="hidden-checkbox" type="checkbox" width="16" height="15" name="statute-accept" required>
-                  <svg class="checkbox-icon-unchecked" width="16" height="15">
+              <label class="accept" for="checkbox-accept">
+                <input class="accept__hidden" type="checkbox" width="16" height="15" name="statute-accept" required>
+                  <svg class="accept__unchecked" width="16" height="15">
                     <use href="./images/icons.svg#icon-checkbox"></use>
                   </svg>
-                  <svg class="checkbox-icon" width="16" height="15">
+                  <svg class="accept__checked" width="16" height="15">
                     <use href="./images/icons.svg#icon-tick"></use>
                   </svg>
-                  <label for="statute-accept" class="statute-text">Oświadczam iż akceptuje<a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a></label>
-              </label><div class="button-form">
-              <button type="submit" class="button-footer">Wyślij</button></div>
+                  <label for="statute-accept" class="accept__text">Oświadczam iż akceptuje <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności</a></label>
+              </label><div class="button-modal">
+              <button type="submit" class="button-modal__submit">Wyślij</button></div>
             </div>
           </div>
         </form>

@@ -26,10 +26,10 @@
         }
 
     &__adress {
-        padding-top: 20px;
         display: block;
 
         &--details {
+            padding-top: 20px;
             list-style: none;
             font-style: var(--main-font-family);
             font-weight: 400;
@@ -50,14 +50,12 @@
         }
 
         &--mail {
-            padding-bottom: 9px;
             padding-top: 9px;
             text-decoration: none;
             color: var(--primary-bg-color);
         }
 
         &--tel {
-            padding-bottom: 9px;
             padding-top: 9px;
             text-decoration: none;
             color: var(--primary-bg-color);
