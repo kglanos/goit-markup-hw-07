@@ -344,20 +344,20 @@
               </li>
             </ul>
           </div>
-          <div class="footer-newsletter">
+          <div class="newsletter-footer">
             <form>
-              <label for="newsletter" 
-                ><h5 class="footer-newsletter__joinus">Zapisz się do newslettera</h5>
-                <div class="input-send footer-newsletter__window">
+              <label for="newsletter" class="newsletter-footer-sendemail"
+                ><h5 class="newsletter-footer__joinus">Zapisz się do newslettera</h5>
+                <div class="input-send newsletter-footer__window">
                 <input
                   type="email"
                   name="Email"
                   placeholder="E-mail"
-                  class="input-newsletter footer-newsletter__window footer-newsletter__window--input"
+                  class="input-newsletter newsletter-footer__input"
               /></label>
-                <button class="button-footer" type="submit">
+                <button class="button-footer newsletter-footer__button" type="submit">
                   Zapisz się
-                  <svg class="icon-footer" width="24" height="24">
+                  <svg class="icon-footer newsletter-footer_button newsletter-footer_button--icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-iconsend"></use>
                   </svg>
                 </button>
@@ -370,33 +370,33 @@
     <!-- Wyskakujace okno -->
     <div class="backdrop is-hidden" data-modal="">
       <div class="modal">
-        <button type="button" class="close-button" data-modal-close>X</button>
-        <form name="order-service" autocomplete="on" class="order-title">
-          <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
-          <div class="window-icon">
-            <div class="form-box">
-              <label for="name" class="form-title">Imie</label>
-              <input  class="form-input" id="name" type="text" name="name" required/>
-              <svg width="12" height="12" class="service-icon">
+        <button type="button" class="modal__close" data-modal-close>X</button>
+        <form name="order-service" autocomplete="on" class="modal__title">
+          <h3 class="modal__title modal__title--heading">Zostaw swoje dane w formularzu poniżej</h3>
+          <div>
+            <div>
+              <label for="name" class="modal__box">Imie</label>
+              <input  class="modal__name" id="name" type="text" name="name" required/>
+              <svg width="12" height="12" class="modal__icon">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
             </div>
-            <div class="form-box">
-              <label for="phone" class="form-title">Telefon</label>
-              <input class="form-input" id="phone" type="tel" name="phone_number" required/>
-              <svg width="12" height="12" class="service-icon">
+            <div>
+              <label for="phone" class="modal__box">Telefon</label>
+              <input class="modal__name" id="phone" type="tel" name="phone_number" required/>
+              <svg width="12" height="12" class="modal__icon">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-            <div class="form-box">
-              <label for="email" class="form-title">Email</label>
-              <input class="form-input" id="email" type="email" name="email" required/>
-              <svg width="12" height="12" class="service-icon">
+            <div>
+              <label for="email" class="modal__box">Email</label>
+              <input class="modal__name" id="email" type="email" name="email" required/>
+              <svg width="12" height="12" class="modal__icon">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg></div>
-              <div class="form-box">
-                <label for="comment" class="form-label">Komentarz</label>
-                <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="form-input textarea"></textarea>
+              <div>
+                <label for="comment" class="modal__box">Komentarz</label>
+                <textarea id="comment" name="comment" placeholder="Wprowadź tekst" class="modal__textarea"></textarea>
               </div>
               <label class="label-checkbox" for="checkbox-accept">
                 <input class="hidden-checkbox" type="checkbox" width="16" height="15" name="statute-accept" required>
